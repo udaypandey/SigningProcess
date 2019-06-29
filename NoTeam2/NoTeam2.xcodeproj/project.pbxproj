@@ -36,6 +36,7 @@
 		78BF530B22C72BE7001A446A /* NoTeam2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoTeam2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BF530F22C72BE7001A446A /* NoTeam2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTeam2Tests.swift; sourceTree = "<group>"; };
 		78BF531122C72BE7001A446A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BF531A22C72CCB001A446A /* NoTeam2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoTeam2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		78BF52F922C72BE6001A446A /* NoTeam2 */ = {
 			isa = PBXGroup;
 			children = (
+				78BF531A22C72CCB001A446A /* NoTeam2.entitlements */,
 				78BF52FA22C72BE6001A446A /* AppDelegate.swift */,
 				78BF52FC22C72BE6001A446A /* ViewController.swift */,
 				78BF52FE22C72BE6001A446A /* Main.storyboard */,
@@ -146,6 +148,14 @@
 				TargetAttributes = {
 					78BF52F622C72BE6001A446A = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					78BF530A22C72BE7001A446A = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -360,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoTeam2/NoTeam2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34AT4PX8ZH;
 				INFOPLIST_FILE = NoTeam2/Info.plist;
@@ -378,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NoTeam2/NoTeam2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34AT4PX8ZH;
 				INFOPLIST_FILE = NoTeam2/Info.plist;
